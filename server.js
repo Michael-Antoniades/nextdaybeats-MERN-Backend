@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+
+
 //const db = require("./db/songs");
 //const aws = require('aws-sdk');
 
@@ -10,12 +12,18 @@ const app = express();
 
 
 
-app.post("/post", (req, res) => {
+app.get("/", (req, res) => {
     console.log("Connected to React");
     res.redirect("/songs");
   });
 
 
+
+
+
+  
 const PORT = process.env.PORT || 8080;
   
-app.listen(PORT, console.log(`Server started on port ${PORT}`));
+app.listen(PORT, () => {
+   console.log(`Backend started on port ${PORT}`);
+});
