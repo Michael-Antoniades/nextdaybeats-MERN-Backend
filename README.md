@@ -1,1 +1,1 @@
-hi :) 
+First commit for backend, MERN stack working on local machine, saving here to begin working on S3 storage
